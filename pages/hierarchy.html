@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Visual Hierarchy Designs</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <script src="../scripts/script.js" defer></script>
+</head>
+<body>
+    <div class="content">
+        <div class="container">
+            <h2>Visual Hierarchy Designs</h2>
+            <p class="description">
+                Visual hierarchy is the arrangement of elements to imply importance. By using various design principles such as size, color, contrast, alignment, repetition, proximity, and white space, designers can guide the viewer's eye through content in a deliberate order.
+            </p>
+            <p class="description">
+                Below are examples of different visual hierarchy designs demonstrating these principles. Please note the label of the design you like the most so you can mention it in your feedback form.
+            </p>
+            <p class="description">
+                <strong>Learn more about visual hierarchy:</strong> <a href="https://www.interaction-design.org/literature/article/visual-hierarchy-the-principles-of-content-prioritization" target="_blank">Principles of Visual Hierarchy</a>
+            </p>
+
+            <!-- Slideshow Container -->
+            <div class="slideshow-container">
+                <!-- Slides -->
+                <div class="slide">
+                    <div class="hierarchy-example">
+                        <!-- F Pattern Variation 1 -->
+                        <div class="f-pattern">
+                            <p><strong>Headline:</strong> Breaking News</p>
+                            <p>Latest updates from around the world.</p>
+                            <p>More in-depth coverage and analysis.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="hierarchy-example">
+                        <!-- F Pattern Variation 2 -->
+                        <div class="f-pattern">
+                            <p><strong>Welcome Message:</strong> Hello, User!</p>
+                            <p>Discover new features and updates.</p>
+                            <p>Check out personalized recommendations.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="hierarchy-example">
+                        <!-- Z Pattern Variation 1 -->
+                        <div class="z-pattern">
+                            <div class="z-top">
+                                <h3>Top Navigation</h3>
+                            </div>
+                            <div class="z-middle">
+                                <img src="../images/banner.jpg" alt="Banner Image">
+                            </div>
+                            <div class="z-bottom">
+                                <button class="cta-button">Call to Action</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="hierarchy-example">
+                        <!-- Z Pattern Variation 2 -->
+                        <div class="z-pattern">
+                            <div class="z-top">
+                                <p>Promotional Offer</p>
+                            </div>
+                            <div class="z-middle">
+                                <p>Key Features Highlight</p>
+                            </div>
+                            <div class="z-bottom">
+                                <p>Contact Information</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="hierarchy-example">
+                        <!-- Z Pattern Variation 3 -->
+                        <div class="z-pattern">
+                            <div class="z-top">
+                                <h3>Brand Logo</h3>
+                            </div>
+                            <div class="z-middle">
+                                <p>Featured Content</p>
+                            </div>
+                            <div class="z-bottom">
+                                <button class="cta-button">Get Started</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation controls -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+            <!-- Slide Label -->
+            <div class="slide-label-container">
+                <p class="slide-label">F Pattern Variation 1</p>
+            </div>
+
+            <!-- Dots/Indicators -->
+            <div class="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+
+            <!-- Navigation Links -->
+            <div class="navigation">
+                <a href="whitespace.html">&#8592; Previous</a>
+                <div class="spacer"></div>
+                <a href="thank-you.html">Next &#8594;</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
