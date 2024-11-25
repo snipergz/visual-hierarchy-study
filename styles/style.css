@@ -661,3 +661,305 @@ footer {
     width: 100%;
   }
 }
+
+/* Slideshow Styles */
+.slideshow-container {
+  position: relative;
+  max-width: 100%;
+  margin: 60px auto 0;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+}
+
+.slide:first-child {
+  display: block;
+}
+
+/* Navigation Controls */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 16px;
+  margin-top: -22px;
+  color: #007acc;
+  font-weight: bold;
+  font-size: 2rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+}
+
+.prev:hover,
+.next:hover {
+  color: #005f99;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+/* Slide Label */
+.slide-label-container {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.slide-label {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Dots */
+.dot-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: #ddd;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.active,
+.dot:hover {
+  background-color: #007acc;
+}
+
+/* F-Pattern Styles */
+.f-pattern {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "content sidebar";
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.f-header {
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.f-header h1 {
+  font-size: 2rem;
+}
+
+.f-nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #007acc;
+}
+
+.f-nav a:hover {
+  color: #005f99;
+}
+
+.f-content {
+  grid-area: content;
+}
+
+.f-content h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.f-content p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.f-sidebar {
+  grid-area: sidebar;
+}
+
+.f-sidebar h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.f-sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.f-sidebar li {
+  margin-bottom: 10px;
+}
+
+.f-sidebar a {
+  text-decoration: none;
+  color: #007acc;
+}
+
+.f-sidebar a:hover {
+  color: #005f99;
+}
+
+.f-sidebar form {
+  display: flex;
+  flex-direction: column;
+}
+
+.f-sidebar input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.f-sidebar button {
+  padding: 10px;
+  background-color: #007acc;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.f-sidebar button:hover {
+  background-color: #005f99;
+}
+
+/* Z-Pattern Styles */
+.z-pattern {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 8px;
+}
+.z-header {
+  display: flex !important;
+  width: 100%;
+}
+
+.z-header,
+.z-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.z-header .logo {
+  height: 50px;
+}
+
+.z-nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #007acc;
+}
+
+.z-nav a:hover {
+  color: #005f99;
+}
+
+.z-banner {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.z-banner h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.z-banner p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.z-banner .cta-button {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #e74c3c;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.z-banner .cta-button:hover {
+  background-color: #c0392b;
+}
+
+.z-footer {
+  margin-top: 20px;
+}
+
+.z-footer p {
+  font-size: 1rem;
+}
+
+.z-footer .social-icons a {
+  margin: 0 5px;
+}
+
+.z-footer .social-icons img {
+  height: 30px;
+}
+
+/* Z-Pattern Variation with Top Image */
+.z-top .full-width-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.z-middle {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.z-bottom {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .f-pattern {
+    grid-template-areas:
+      "header"
+      "content"
+      "sidebar";
+    grid-template-columns: 1fr;
+  }
+
+  .z-header,
+  .z-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .z-nav {
+    margin-top: 10px;
+  }
+
+  .z-banner h1 {
+    font-size: 2rem;
+  }
+
+  .z-banner p {
+    font-size: 1rem;
+  }
+}

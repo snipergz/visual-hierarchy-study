@@ -11,7 +11,7 @@
         <div class="container">
             <h2>Visual Hierarchy Designs</h2>
             <p class="description">
-                Visual hierarchy is the arrangement of elements to imply importance. By using various design principles such as size, color, contrast, alignment, repetition, proximity, and white space, designers can guide the viewer's eye through content in a deliberate order.                 Below are examples of different visual hierarchy designs demonstrating these principles. Please note the label of the design you like the most so you can mention it in your feedback form.
+                Visual hierarchy is the arrangement of elements to imply importance. By using various design principles such as size, color, contrast, alignment, repetition, proximity, and white space, designers can guide the viewer's eye through content in a deliberate order. Below are examples of different visual hierarchy designs demonstrating these principles. Please note the label of the design you like the most so you can mention it in your feedback form.
             </p>
             <p class="description">
                 <strong>Which hierarchy layout best captured your attention?</strong>
@@ -19,73 +19,123 @@
 
             <!-- Slideshow Container -->
             <div class="slideshow-container">
-                <!-- Slides -->
+                <!-- F Pattern Variation 1 -->
                 <div class="slide">
-                    <div class="hierarchy-example">
-                        <!-- F Pattern Variation 1 -->
-                        <div class="f-pattern">
-                            <p><strong>Headline:</strong> Breaking News</p>
-                            <p>Latest updates from around the world.</p>
-                            <p>More in-depth coverage and analysis.</p>
+                    <div class="hierarchy-example f-pattern">
+                        <header class="f-header">
+                            <h1>Tech Today</h1>
+                            <nav class="f-nav">
+                                <a href="#">Home</a>
+                                <a href="#">Gadgets</a>
+                                <a href="#">Reviews</a>
+                                <a href="#">Contact</a>
+                            </nav>
+                        </header>
+                        <main class="f-content">
+                            <h2>Breaking: New Smartphone Release</h2>
+                            <p>The latest smartphone model has just been unveiled, featuring cutting-edge technology and innovative design.</p>
+                        </main>
+                        <aside class="f-sidebar">
+                            <h3>Latest Articles</h3>
+                            <ul>
+                                <li><a href="#">Top 10 Tech Trends</a></li>
+                                <li><a href="#">How AI is Changing the World</a></li>
+                                <li><a href="#">Future of Robotics</a></li>
+                            </ul>
+                        </aside>
+                    </div>
+                </div>
+
+                <!-- F Pattern Variation 2 -->
+                <div class="slide">
+                    <div class="hierarchy-example f-pattern">
+                        <header class="f-header">
+                            <h1>Health & Wellness</h1>
+                            <nav class="f-nav">
+                                <a href="#">Home</a>
+                                <a href="#">Nutrition</a>
+                                <a href="#">Fitness</a>
+                                <a href="#">Mindfulness</a>
+                            </nav>
+                        </header>
+                        <main class="f-content">
+                            <h2>5 Tips for a Healthier Lifestyle</h2>
+                            <p>Discover simple changes you can make today to improve your overall health and well-being.</p>
+                        </main>
+                        <aside class="f-sidebar">
+                            <h3>Subscribe to our Newsletter</h3>
+                            <form>
+                                <input type="email" placeholder="Enter your email">
+                                <button type="submit">Subscribe</button>
+                            </form>
+                        </aside>
+                    </div>
+                </div>
+
+                <!-- Z Pattern Variation 1 -->
+                <div class="slide">
+                    <div class="hierarchy-example z-pattern">
+                        <header class="z-header">
+                            <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fcontent.sportslogos.net%2Flogos%2F31%2F690%2Ffull%2F7034_georgia_tech_yellow_jackets-alternate-1991.png&f=1&nofb=1&ipt=ee0eed4f34c5b1f8945e6508338eb04e7226f2c3373a83e23ca47e6485b9a555&ipo=images" alt="Company Logo" class="logo">
+                            <nav class="z-nav">
+                                <a href="#">Features</a>
+                                <a href="#">Pricing</a>
+                                <a href="#">About Us</a>
+                                <a href="#">Contact</a>
+                            </nav>
+                        </header>
+                        <section class="z-banner">
+                            <h1>Welcome to Our Service</h1>
+                            <p>Your success is our priority. Discover how we can help your business grow.</p>
+                            <a href="#" class="cta-button">Get Started</a>
+                        </section>
+                        <footer class="z-footer">
+                            <p>&copy; 2023 Company Name. All rights reserved.</p>
+                        </footer>
+                    </div>
+                </div>
+
+                <!-- Z Pattern Variation 2 -->
+                <div class="slide">
+                    <div class="hierarchy-example z-pattern">
+                        <div class="z-top">
+                            <img src="https://cdn.pixabay.com/photo/2016/08/16/09/53/international-conference-1597531_1280.jpg" alt="Event Banner" class="full-width-image">
+                        </div>
+                        <div class="z-middle">
+                            <h2>Join Our Annual Conference</h2>
+                            <p>Connect with industry leaders and innovators at our annual conference. Early bird tickets are available now.</p>
+                        </div>
+                        <div class="z-bottom">
+                            <a href="#" class="cta-button">Register Now</a>
                         </div>
                     </div>
                 </div>
+
+                <!-- Z Pattern Variation 3 -->
                 <div class="slide">
-                    <div class="hierarchy-example">
-                        <!-- F Pattern Variation 2 -->
-                        <div class="f-pattern">
-                            <p><strong>Welcome Message:</strong> Hello, User!</p>
-                            <p>Discover new features and updates.</p>
-                            <p>Check out personalized recommendations.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="hierarchy-example">
-                        <!-- Z Pattern Variation 1 -->
-                        <div class="z-pattern">
-                            <div class="z-top">
-                                <h3>Top Navigation</h3>
+                    <div class="hierarchy-example z-pattern">
+                        <header class="z-header">
+                            <h1>Travel Explorer</h1>
+                            <nav class="z-nav">
+                                <a href="#">Destinations</a>
+                                <a href="#">Tours</a>
+                                <a href="#">Blog</a>
+                                <a href="#">Contact</a>
+                            </nav>
+                        </header>
+                        <section class="z-banner">
+                            <h1>Discover the World with Us</h1>
+                            <p>Experience unforgettable journeys and create lasting memories.</p>
+                            <a href="#" style="background-color: rgb(10, 55, 92);" class="cta-button">Explore Now</a>
+                        </section>
+                        <footer class="z-footer">
+                            <p>Follow us on social media</p>
+                            <div class="social-icons">
+                                <a href="#">Facebook</a>
+                                <a href="#">Twitter</a>
+                                <a href="#">Instagram</a>
                             </div>
-                            <div class="z-middle">
-                                <img src="../images/banner.jpg" alt="Banner Image">
-                            </div>
-                            <div class="z-bottom">
-                                <button class="cta-button">Call to Action</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="hierarchy-example">
-                        <!-- Z Pattern Variation 2 -->
-                        <div class="z-pattern">
-                            <div class="z-top">
-                                <p>Promotional Offer</p>
-                            </div>
-                            <div class="z-middle">
-                                <p>Key Features Highlight</p>
-                            </div>
-                            <div class="z-bottom">
-                                <p>Contact Information</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="hierarchy-example">
-                        <!-- Z Pattern Variation 3 -->
-                        <div class="z-pattern">
-                            <div class="z-top">
-                                <h3>Brand Logo</h3>
-                            </div>
-                            <div class="z-middle">
-                                <p>Featured Content</p>
-                            </div>
-                            <div class="z-bottom">
-                                <button class="cta-button">Get Started</button>
-                            </div>
-                        </div>
+                        </footer>
                     </div>
                 </div>
 
