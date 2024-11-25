@@ -49,10 +49,17 @@ header {
     255,
     0.9
   ); /* Semi-transparent white background */
-  padding: 60px 20px;
-  margin: 40px 0;
+  padding: 0px 20px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  min-height: 100vh;
+  height: auto;
+}
+
+.center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .content h2 {
@@ -64,15 +71,8 @@ header {
 .content p.description {
   font-size: 1.1rem;
   text-align: center;
-  color: #666;
+  color: #000000;
   margin-bottom: 50px; /* Increased from 40px */
-}
-
-/* Fix hover issue by ensuring options don't overlap content */
-.option-card {
-  /* ... existing styles ... */
-  position: relative; /* Ensure stacking context */
-  z-index: 1; /* Keep options above background but below overlays */
 }
 
 .content {
@@ -99,6 +99,9 @@ header {
   cursor: pointer;
   min-height: 226px;
   height: auto;
+  position: relative;
+  z-index: 1;
+  font-size: 20px;
 }
 
 .option-card:hover {
@@ -130,7 +133,7 @@ header {
 
 .landing-page .subtext {
   font-size: 1.2rem;
-  color: #555;
+  color: #000;
   margin-bottom: 50px; /* Adjusted spacing */
   max-width: 700px;
   margin-left: auto;
@@ -582,7 +585,7 @@ footer {
 }
 
 .resources h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #2c3e50;
   text-align: center;
   margin-bottom: 30px;
